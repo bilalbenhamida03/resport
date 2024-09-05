@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #083F88;
+            color: #ffffff;
+        }
+
+        .header {
+            background-color: #083F88;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .header h1 {
+            color: #cbf0f7;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin-right: 40px;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: normal;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #cbf0f7;
+        }
+
+        .about-section {
+            background-color: #083F88;
+            color: #ffffff;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 4px solid #cbf0f7;
+            margin-top: 80px; /* Add margin to prevent content overlap with fixed header */
+        }
+
+        .about-title {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .about-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #cbf0f7;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .about-description {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #d1d1d1;
+            margin-bottom: 40px;
+        }
+
+        .skills-section {
+            background-color: #cbf0f7;
+            padding: 60px 20px;
+            color: #083F88;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .skills-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills-list li {
+            background-color: #083F88;
+            color: #cbf0f7;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .skills-list li:hover {
+            background-color: #cbf0f7;
+            color: #083F88;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bilal Benhamida</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h2 class="about-title">À propos de moi</h2>
+        <p class="about-description">Je suis un développeur web enthousiaste, toujours à la recherche de nouveaux défis. J'aime relever les challenges liés à la création d'interfaces web intuitives et efficaces. Mon parcours académique m'a permis d'acquérir de solides bases techniques, que je souhaite mettre à profit pour contribuer à des projets ambitieux.</p>
+    </section>
+
+    <section class="skills-section">
+        <h2 class="skills-title">Compétences</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Laravel</li>
+            <li>SQL & NoSQL</li>
+            <li>Gestion de Projet</li>
+            <li>Méthodes Agiles (Scrum)</li>
+        </ul>
+    </section>
+</body>
+</html>
